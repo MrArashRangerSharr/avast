@@ -10,7 +10,7 @@ do
    --like : local chat = "chat#id"..12345678
    
   local sends = send_msg(chat, fuse, ok_cb, false)
-  return 'پیام شما ارسال شد.بزودی از طرف تیم آواست خوانده و رسیدگی میشود.'
+  return 'بزودی از طرف تیم به پیام شما رسیدگی میشود'
  
  end
  end
