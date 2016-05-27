@@ -220,7 +220,7 @@ local function show_group_settingsmod(msg, data, target)
     	leave_ban = data[tostring(msg.to.id)]['settings']['leave_ban']
    	end
   local settings = data[tostring(target)]['settings']
-  local text = "›تنظیمات گروه:\n_________________________\n>قفل عضوگیری گروه : "..settings.lock_join.."\n>قفل فحاشی : "..settings.antifosh.."\n>قفل چت : "..settings.lock_chat.."\n>قفل تبلیغات : "..settings.antiads.."\n>قفل نام گروه : "..settings.lock_name.."\n>قفل عکس گروه : "..settings.lock_photo.."\n>قفل اضافه کردن عضو : "..settings.lock_member.."\n>قفل خروج : "..leave_ban.."\n>حساسیت به اسپم : "..NUM_MSG_MAX.."\n>قفل افزودن ربات : "..bots_protection.."\n>عمل آنتی اسپم: ban\n>فیلترینگ کلمات : yes\n>قابلیت چت با آواست : yes\n>پیام خوش آمد گویی : yes\n>حالت گروه : normal\n>نوع گروه:گروه\n>عمومی بودن گروه: نامعلوم\n_______________________\n›تنظیمات ربات:\n>نسخه ربات:7.2\n>زبان ربات: fa\navast Bot\nChannel: @avast_Team\nSudo: @arashnomiri\nدر صورت وجود مشکل با پشتیبانی تماس حاصل فرمایید\n________________________\n›بخش فردی:\n>رابط کاربری: نامعلوم\n\nIm The Best!"
+  local text = "›تنظیمات گروه:\n_________________________\n>قفل عضوگیری گروه : "..settings.lock_join.."\n>قفل فحاشی : "..settings.antifosh.."\n>قفل چت : "..settings.lock_chat.."\n>قفل تبلیغات : "..settings.antiads.."\n>قفل نام گروه : "..settings.lock_name.."\n>قفل عکس گروه : "..settings.lock_photo.."\n>قفل اضافه کردن عضو : "..settings.lock_member.."\n>قفل خروج : "..leave_ban.."\n>حساسیت به اسپم : "..NUM_MSG_MAX.."\n>قفل افزودن ربات : "..bots_protection.."\n>عمل آنتی اسپم: ban\n>فیلترینگ کلمات : yes\n>قابلیت چت با آسیمو : yes\n>پیام خوش آمد گویی : yes\n>حالت گروه : normal\n>نوع گروه:گروه\n>عمومی بودن گروه: نامعلوم\n_______________________\n›تنظیمات ربات:\n>نسخه ربات:1\n>زبان ربات: fa\nAsimo Bot\nChannel: @AsimoTeam\nSudo: @ArashRanger\nدر صورت وجود مشکل با پشتیبانی تماس حاصل فرمایید\n________________________\n›بخش فردی:\n>رابط کاربری: نامعلوم\n\nIm The Best!"
   return text
 end
 
@@ -1161,7 +1161,7 @@ local function run(msg, matches)
         if success == 0 then
            return send_large_msg(receiver, '*Error: ربات سازنده گروه نیست پس در نتیجه لینک نمیدهد.از دستور /setlink استفاده کنید یا با پشتیبانی تماس حاصل فرمایید')
         end
-        send_large_msg(receiver, "Created a new link")
+        send_large_msg(receiver, "لینک جدید ساخته شد")
         data[tostring(msg.to.id)]['settings']['set_link'] = result
         save_data(_config.moderation.data, data)
       end
@@ -1178,7 +1178,7 @@ local function run(msg, matches)
         return "اول با دستور /newlink لینک جدید بسازید !"
       end
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
-      return "لینک گروه:\n_________________________\n"..group_link
+      return "لینک گروه " ..string.gsub(msg.to.print_name, "_", " ").. ":\n_________________________\n"..group_link
     end
 	if matches[1] == 'linkpv' then
       if not is_momod(msg) then
