@@ -1,15 +1,15 @@
 do
 
 function run(msg, matches)
-  return 'avast V7'.. VERSION .. [[ 
+  return 'asimo v1'.. VERSION .. [[ 
  
   توسعه دهنده : @arashnomiri
   
-  کانال : @avast_Team
+  کانال : @AsimoTeam
   
-  http://bit.ly/1SCRF1i
+  برای دریافت اطلاعات مدیران نام کاربری آن ادمین را ارسال کنید
   
-  avast V7.2
+  Asimo V1
   
   All rights reserved.
   __________________]]
