@@ -282,7 +282,7 @@ function create_config( )
     "tv",
     "help_plug"
     },
-    sudo_users = {212990316},--Sudo users
+    sudo_users = {226726601},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[Asimo-Bot V1
