@@ -3,7 +3,7 @@ do
 function run(msg, matches)
   return 'asimo v1'.. VERSION .. [[ 
  
-  توسعه دهنده : @arashnomiri
+  توسعه دهنده : @ArashRanger
   
   کانال : @AsimoTeam
   
