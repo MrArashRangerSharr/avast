@@ -20,10 +20,10 @@ end
 if msg.text == "آواست" then
   return "بهترین"
 end
-if msg.text == "Avast" then
+if msg.text == "Asimo" then
   return "بهترین"
 end
-if msg.text == "AVAST" then
+if msg.text == "ASIMO" then
   return "جان"
 end
 if msg.text == "bot" then
@@ -56,7 +56,7 @@ end
 if msg.text == "arash" then
   return "چیکار داری بابامو؟"
 end
-if msg.text == "@arashnomiri" then
+if msg.text == "@ArashRanger" then
   return "چیکار داری بابامو؟"
 end
 end
@@ -71,13 +71,13 @@ return {
     "^[Bb]ot$",
     "^[Bb]ye$",
     "^[Ss]alam$",
-    "^@arashnomiri$",
+    "^@ArashRanger$",
     "^arash$",
     "^خدافظ$",
     "^بای$",
     "^[Ss]lm$",
-    "^AVAST$",
-    "^[Aa]vast$",
+    "^ASIMO$",
+    "^[Aa]simo$",
     }, 
   run = run,
   pre_process = pre_process
