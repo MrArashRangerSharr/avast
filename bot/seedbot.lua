@@ -285,20 +285,16 @@ function create_config( )
     sudo_users = {212990316},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[avast-Bot V7.5 - http://bit.ly/1SCRF1i
+    about_text = [[Asimo-Bot V1
 ربات پیشرفته برپایه لوا
 
-اعضای تیم آواست:
-@arashnomiri
-@Oo_sArDaR_marginam_oO
-@redteam_01_01
-@Pukeram
-@iq_plus
-@negative_officiall
+مدیران:
+@ArashRanger
+@hacker_unknown
 @DrCyber1736
 
 کانال:
-@avast_Team
+@AsimoTeam
 ]],
     help_text_realm = [[
 Realm Commands:
