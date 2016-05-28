@@ -221,7 +221,7 @@ local function show_group_settingsmod(msg, data, target)
    	end
   local settings = data[tostring(target)]['settings']
   local text = "›تنظیمات گروه:\n_________________________\n>قفل عضوگیری گروه : "..settings.lock_join.."\n>قفل فحاشی : "..settings.antifosh.."\n>قفل چت : "..settings.lock_chat.."\n>قفل تبلیغات : "..settings.antiads.."\n>قفل نام گروه : "..settings.lock_name.."\n>قفل عکس گروه : "..settings.lock_photo.."\n>قفل اضافه کردن عضو : "..settings.lock_member.."\n>قفل خروج : "..leave_ban.."\n>حساسیت به اسپم : "..NUM_MSG_MAX.."\n>قفل افزودن ربات : "..bots_protection.."\n>عمل آنتی اسپم: ban\n>فیلترینگ کلمات : yes\n>قابلیت چت با آسیمو : yes\n>پیام خوش آمد گویی : yes\n>حالت گروه : normal\n>نوع گروه:گروه\n>عمومی بودن گروه: نامعلوم\n_______________________\n›تنظیمات ربات:\n>نسخه ربات:1\n>زبان ربات: fa\nAsimo Bot\nChannel: @AsimoTeam\nSudo: @ArashRanger\nدر صورت وجود مشکل با پشتیبانی تماس حاصل فرمایید\n________________________\n›بخش فردی:\n>رابط کاربری: نامعلوم\n\nIm The Best!"
-  return reply_msg(msg.id, text, ok_cb, false)
+  return text
 end
 
 local function set_descriptionmod(msg, data, target, about)
