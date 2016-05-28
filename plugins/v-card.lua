@@ -17,6 +17,11 @@ Name: Dr Cyber
 Username: @DrCyber1736
 Rank: Admin,Protecter
 Phone number: ---
+-----------------------
+Name: Amir Sbss
+Username: @Amir_h
+Rank: Admin,Helper
+Phone number: ---
 ______________________
 نکته:این افراد تنها ادمین ها و اعضای رسمی تیم هستند
 ]]
