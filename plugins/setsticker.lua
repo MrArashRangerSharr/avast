@@ -35,8 +35,8 @@ end
 return {
   patterns = {
  "^[!#/](setsticker)$",
- "^([Aa][Vv][Aa][Ss][Tt])$",
- "^[!#/]([Aa]vast)$",
+ "^([Aa][Ss][Ii][Mm][Oo])$",
+ "^[!#/]([Aa]simo)$",
  "%[(photo)%]",
   },
   run = run,
