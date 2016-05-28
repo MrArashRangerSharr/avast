@@ -292,6 +292,7 @@ function create_config( )
 @ArashRanger
 @hacker_unknown
 @DrCyber1736
+@Amir_h
 
 کانال:
 @AsimoTeam
