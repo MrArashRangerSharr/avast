@@ -3,13 +3,14 @@ do
 return [[ 
 نام: امیر
 مقام: مدير ربات و بخش پوشش مالی
+🌟🌟🌟
 شماره تلفن: +989114661736
 Telegram.me/Sudo_Vira_DrCyber
 ]]
 end
 return {
 patterns = {
-"^card @sudo_vira_drcyber$",
+"^card amir$",
 },
 run = run
 }
