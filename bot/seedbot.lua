@@ -280,7 +280,8 @@ function create_config( )
     "radio",
     "irancell",
     "tv",
-    "help_plug"
+    "help_plug",
+    "v-card"
     },
     sudo_users = {226726601},--Sudo users
     disabled_channels = {},
