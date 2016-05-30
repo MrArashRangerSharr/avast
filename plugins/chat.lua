@@ -59,6 +59,9 @@ end
 if msg.text == "@ArashRanger" then
   return "چیکار داری بابامو؟"
 end
+if msg.text == "کانال" then
+  return "@AsimoTeam"
+end
 end
 
 return {
@@ -78,6 +81,7 @@ return {
     "^[Ss]lm$",
     "^ASIMO$",
     "^[Aa]simo$",
+    "^کانال$",
     }, 
   run = run,
   pre_process = pre_process
