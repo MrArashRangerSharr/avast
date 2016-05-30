@@ -401,7 +401,7 @@ local function unlock_group_namemod(msg, data, target)
   else
     data[tostring(target)]['settings']['lock_name'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'Group name has been unlocked'
+    return 'نام گروه باز شد'
   end
 end
 local function lock_group_floodmod(msg, data, target)
@@ -1161,7 +1161,7 @@ local function run(msg, matches)
         if success == 0 then
            return send_large_msg(receiver, '*Error: ربات سازنده گروه نیست پس در نتیجه لینک نمیدهد.از دستور /setlink استفاده کنید یا با پشتیبانی تماس حاصل فرمایید')
         end
-        send_large_msg(receiver, "لینک جدید ساخته شد")
+        send_large_msg(receiver, "لینک بسته شد")
         data[tostring(msg.to.id)]['settings']['set_link'] = result
         save_data(_config.moderation.data, data)
       end
