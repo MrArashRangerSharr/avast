@@ -134,7 +134,7 @@ local function run(msg, matches)
       return "آیدی گروه " ..string.gsub(msg.to.print_name, "_", " ").. ":\n\n"..msg.to.id.."\nشما میتوانید از این آیدی برای عضویت در بعدا استفاده کنید\nبرای مثال \n /join 0000000 "
     end
   end
-  if matches[1]:lower() == 'kickme' then-- /kickme
+  if matches[1]:lower() == 'left' then-- /kickme
   local receiver = get_receiver(msg)
     if msg.to.type == 'chat' then
       local name = user_print_name(msg.from)
@@ -319,7 +319,7 @@ return {
     "^[!/]([Uu]nbanall) (.*)$",
     "^[!/]([Uu]nbanall)$",
     "^[!/]([Kk]ick) (.*)$",
-    "^[!/]([Kk]ickme)$",
+    "^[!/]([Ll]eft)$",
     "^[!/]([Bb]an)$",
     "^[!/]([Uu]nban)$",
     "^[!/]([Ii]d)$",
