@@ -808,7 +808,7 @@ end
 function ban_list(chat_id)
   local hash =  'banned:'..chat_id
   local list = redis:smembers(hash)
-  local text = "هیچ عضو بن شده ای وجود ندارد !\n\n"
+  local text = "افراد بن شده این گروه!\n\n"
   for k,v in pairs(list) do
  		local user_info = redis:hgetall('user:'..v)
 -- 		vardump(user_info)
@@ -830,7 +830,7 @@ end
 function banall_list() 
   local hash =  'gbanned'
   local list = redis:smembers(hash)
-  local text = "هیچ عضو بن شده ای وجود ندارد !\n\n"
+  local text = "افراد بن شده بصورت همگانی\n\n"
   for k,v in pairs(list) do
  		local user_info = redis:hgetall('user:'..v)
 -- 		vardump(user_info)
