@@ -10,7 +10,7 @@ Telegram.me/hacker_unknown
 end
 return {
 patterns = {
-"^card @hacker_unknown$",
+"^card shervin$",
 },
 run = run
 }
