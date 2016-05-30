@@ -1159,7 +1159,7 @@ local function run(msg, matches)
       local function callback (extra , success, result)
         local receiver = 'chat#'..msg.to.id
         if success == 0 then
-           return send_large_msg(receiver, '*Error: ربات سازنده گروه نیست پس در نتیجه لینک نمیدهد.از دستور /setlink استفاده کنید یا با پشتیبانی تماس حاصل فرمایید')
+           return send_large_msg(receiver, '*Error: ربات سازنده گروه نیست پس در نتیجه لینک نمیدهد')
         end
         send_large_msg(receiver, "لینک بسته شد")
         data[tostring(msg.to.id)]['settings']['set_link'] = result
@@ -1182,7 +1182,7 @@ local function run(msg, matches)
     end
 	if matches[1] == 'linkpv' then
       if not is_momod(msg) then
-        return "For moderators only!"
+        return "فقط مدیران!"
       end
       local group_link = data[tostring(msg.to.id)]['settings']['set_link']
       if not group_link then 
