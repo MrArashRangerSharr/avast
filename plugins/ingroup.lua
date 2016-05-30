@@ -1152,7 +1152,7 @@ local function run(msg, matches)
       return show_group_settingsmod(msg, data, target)
     end	
     
-    if matches[1] == 'newlink' and not is_realm(msg) then
+    if matches[1] == 'clink' and not is_realm(msg) then
       if not is_momod(msg) then
         return "فقط مدیران!"
       end
@@ -1364,7 +1364,7 @@ return {
   "^[!/](settings)$",
   "^[!/](public) (.*)$",
   "^[!/](modlist)$",
-  "^[!/](newlink)$",
+  "^[!/](clink)$",
   "^[!/](link)$",
   "^[!/](linkpv)$",
   "^[!/](kickinactive)$",
@@ -1392,7 +1392,7 @@ return {
   "^([Ss]etflood) (%d+)$",
   "^([Ss]ettings)$",
   "^([Mm]odlist)$",
-  "^([Nn]ewlink)$",
+  "^([Cc]link)$",
   "^([Ll]ink)$",
   "%[(photo)%]",
   "^!!tgservice (.+)$",
