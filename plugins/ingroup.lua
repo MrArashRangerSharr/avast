@@ -1161,7 +1161,7 @@ local function run(msg, matches)
         if success == 0 then
            return send_large_msg(receiver, '*Error')
         end
-        send_large_msg(receiver, "لینک منقضی شد و لینک جدید ساخته شد:\n________________\n "..group_link")
+        send_large_msg(receiver, "لینک منقضی شد و لینک جدید ساخته شد:\n________________\n "..group_link.."
         data[tostring(msg.to.id)]['settings']['set_link'] = result
         save_data(_config.moderation.data, data)
       end
