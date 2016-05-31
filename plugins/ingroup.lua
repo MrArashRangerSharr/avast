@@ -1161,7 +1161,7 @@ local function run(msg, matches)
         if success == 0 then
            return send_large_msg(receiver, '*Error')
         end
-        send_large_msg(receiver, "لینک منقضی شد و لینک جدید ساخته شد:\n________________\n "..group_link.."
+        send_large_msg(receiver, "لینک منقضی شد و لینک جدید ساخته شد:\n________________\n "..group_link
         data[tostring(msg.to.id)]['settings']['set_link'] = result
         save_data(_config.moderation.data, data)
       end
@@ -1186,7 +1186,7 @@ local function run(msg, matches)
       end
       local group_link = data[tostring(msg.to.id)]['settings']['set_link']
       if not group_link then 
-        return "اول با دستور /newlink لینک جدید بسازید !"
+        return "اول با دستور /clink لینک جدید بسازید !"
       end
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
      send_large_msg('user#id'..msg.from.id, "Group link:\n"..group_link)
