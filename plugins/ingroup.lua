@@ -1159,9 +1159,22 @@ local function run(msg, matches)
       local function callback (extra , success, result)
         local receiver = 'chat#'..msg.to.id
         if success == 0 then
-           return send_large_msg(receiver, '*Error: ربات سازنده گروه نیست پس در نتیجه لینک نمیدهد')
+           return send_large_msg(receiver, '*Error')
         end
         send_large_msg(receiver, "لینک بسته شد")
+        data[tostring(msg.to.id)]['settings']['set_link'] = result
+        save_data(_config.moderation.data, data)
+      end
+          if matches[1] == 'newlink' and not is_realm(msg) then
+      if not is_momod(msg) then
+        return "فقط مدیران!"
+      end
+      local function callback (extra , success, result)
+        local receiver = 'chat#'..msg.to.id
+        if success == 0 then
+           return send_large_msg(receiver, '*Error: ربات سازنده گروه نیست پس در نتیجه لینک نمیدهد')
+        end
+        send_large_msg(receiver, "لینک جدید ساخته شد:\n___________________\n"..group_link.."")
         data[tostring(msg.to.id)]['settings']['set_link'] = result
         save_data(_config.moderation.data, data)
       end
